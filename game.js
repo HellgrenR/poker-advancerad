@@ -1,5 +1,6 @@
 import Dealer from "./dealer.js"
 import Player from "./player.js"
+import Valid from "./validation.js"
 
 export default class Game {
 
@@ -16,7 +17,10 @@ export default class Game {
 
     for (let i = 0; i < this.players.length; i++) {
       this.dealer.giveFiveCards(this.players[i])
+      Valid.validate(this.players[i])
     }
+
+
 
   }
 
