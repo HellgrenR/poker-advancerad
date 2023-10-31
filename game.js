@@ -14,8 +14,9 @@ export default class Game {
 
     this.dealer.randomizeCards()
 
-    for (let i = 0)
-    this.dealer.giveFiveCards()
+    for (let i = 0; i < this.players.length; i++) {
+      this.dealer.giveFiveCards(this.players[i])
+    }
 
   }
 
