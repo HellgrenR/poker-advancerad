@@ -9,8 +9,9 @@ export default class Game {
     this.dealer = new Dealer()
   }
 
-  startGame() {
-
+  startGame(...names) {
+    this.addPlayers(...names)
+    
   }
 
   addPlayers(...names) {

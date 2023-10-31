@@ -21,13 +21,6 @@ export default class Deck {
     return this._cards
   }
 
-  randomizeCards() {
-    for (let i = 0; i < this._cards.length; i++) {
-      const card = this._cards.splice(Math.floor(Math.random() * this._cards.length), 1)[0]
-      this._cards.push(card)
-    }
-  }
-
 }
 
 

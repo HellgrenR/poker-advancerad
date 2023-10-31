@@ -12,7 +12,7 @@ player.push(new Player("Slim"))
 player.push(new Player("Luke"))
 
 
-dealer.randomizeCards
+dealer.randomizeCards()
 
 console.log(dealer.cards)
 

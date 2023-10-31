@@ -18,6 +18,13 @@ export default class Dealer {
     player._hand.push(...cards)
   }
 
+  randomizeCards() {
+    for (let i = 0; i < this.deck.cards.length; i++) {
+      const card = this.deck.cards.splice(Math.floor(Math.random() * this.deck.cards.length), 1)[0]
+      this.deck.cards.push(card)
+    }
+  }
+
 }
 
 
