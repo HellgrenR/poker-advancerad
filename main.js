@@ -13,14 +13,13 @@ player.push(new Player("Luke"))
 
 
 dealer.randomizeCards()
-
-console.log(dealer.cards)
+console.log(dealer.deck.cards)
 
 
 dealer.giveFiveCards(player[0])
 dealer.giveFiveCards(player[1])
 
-console.log(dealer.cards)
+console.log(dealer.deck.cards.length)
 console.log(player[0].hand)
 console.log(player[1].hand)
 
