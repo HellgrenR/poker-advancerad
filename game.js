@@ -19,9 +19,6 @@ export default class Game {
       this.dealer.giveFiveCards(this.players[i])
       Valid.validate(this.players[i])
     }
-
-
-
   }
 
   addPlayers(...names) {
