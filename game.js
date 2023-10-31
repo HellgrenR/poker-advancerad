@@ -11,7 +11,12 @@ export default class Game {
 
   startGame(...names) {
     this.addPlayers(...names)
-    
+
+    this.dealer.randomizeCards()
+
+    for (let i = 0)
+    this.dealer.giveFiveCards()
+
   }
 
   addPlayers(...names) {
