@@ -1,9 +1,6 @@
 import Dealer from "./dealer.js"
 import Player from "./player.js"
-import Board from "./board.js"
 import Valid from "./validation.js"
-
-let board = new Board()
 
 let dealer = new Dealer()
 
