@@ -1,9 +1,9 @@
 import Deck from "./deck.js"
 
-export default class Dealer extends Deck {
+export default class Dealer {
 
   constructor() {
-    super()
+    this.deck = new Deck()
   }
 
   giveFiveCards(player) {
