@@ -1,3 +1,4 @@
+import Dealer from "./dealer.js"
 
 export default class Game {
 
