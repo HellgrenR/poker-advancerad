@@ -2,23 +2,27 @@ import Deck from "./deck.js"
 
 export default class Board extends Deck {
 
-  _players = []
-  _throwAway = []
+  #players = []
+  #throwAway = []
+
+  get throwAway() {
+    return this.#throwAway
+  }
 
   set players(players) {
-    this._players = players
+    this.#players = players
   }
 
   get players() {
-    return this._players
+    return this.#players
   }
 
   set throwAway(throwAway) {
-    this._throwAway = throwAway
+    this.#throwAway = throwAway
   }
 
   get throwAway() {
-    return this._throwAway
+    return this.#throwAway
   }
 
   constructor() {
@@ -26,9 +30,9 @@ export default class Board extends Deck {
   }
 
   addThrowAwayToCards() {
-    // lägg alla kort i _throwAway i _cards
-    let cards = this._throwAway.splice(0, this._throwAway.length)
-    this._cards.push(...cards)
+    // lägg alla kort i #throwAway i #cards
+    let card = this.#throwAway.splice(0, this.#throwAway.length)
+    this.cards.push(...card)
   }
 
 }

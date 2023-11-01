@@ -1,14 +1,15 @@
 
 export default class Deck {
 
+ #cards = []
+
   constructor() {
-    this._cards = []
     const suits = ["Hearts", "Diamonds", "Clubs", "Spades"]
     const ranks = [2, 3, 4, 5, 6, 7, 8, 9, 10, "Jack", "Queen", "King", "Ace"]
 
     for (const suit of suits) {
       for (const rank of ranks) {
-        this._cards.push({
+        this.#cards.push({
           name: `${rank} of ${suit}`,
           rank: rank,
           suit: suit
@@ -18,7 +19,7 @@ export default class Deck {
   }
 
   get cards() {
-    return this._cards
+    return this.#cards
   }
 
 }
