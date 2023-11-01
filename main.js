@@ -2,7 +2,7 @@ import Game from "./game.js"
 
 let game = new Game()
 
-game.startGame()
+game.startGame("Jonte", "Ralle")
 
 
 
