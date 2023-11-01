@@ -9,13 +9,13 @@ export default class Dealer {
   giveFiveCards(player) {
     // ge 5 kort från _cards till spelaren
     let cards = this.deck.cards.splice(0, 5)
-    player._hand.push(...cards)
+    player.hand.push(...cards)
   }
 
   giveTwoCards(player) {
     // ge 2 kort från _cards till spelaren
     let cards = this.deck.cards.splice(0, 2)
-    player._hand.push(...cards)
+    player.hand.push(...cards)
   }
 
   randomizeCards() {
