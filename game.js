@@ -26,7 +26,7 @@ export default class Game {
       console.log("Du måste minst ha två spelare")
     } else {
       for (let i = 0; i < names.length; i++) {
-        this.players.push(new Player(names[i]))
+        this.players.push(new Player(names))
       }
     }
   }
